@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Portfolio Website</title>
+
+    <!-- Montserrat Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container-fluid px-0">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+        <div class="container">
+          <!-- Brand -->
+          <a
+            class="navbar-brand d-flex align-items-center fw-bold fs-4"
+            href="/"
+          >
+            <span class="material-icons-outlined me-2 text-primary"
+              >terminal</span
+            >
+            Chisty Himel<span class="text-primary">_</span>
+          </a>
+
+          <!-- Toggler Button -->
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar Links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+              <li class="nav-item">
+                <a class="nav-link text-dark px-3 fw-semibold" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark px-3 fw-semibold" href="#about"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark px-3 fw-semibold" href="#projects"
+                  >Projects</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-dark px-3 fw-semibold"
+                  href="#testimonials"
+                  >Testimonials</a
+                >
+              </li>
+              <!-- Call-to-Action Button -->
+              <li class="nav-item ms-lg-3">
+                <a
+                  class="btn btn-primary px-4 py-2 text-white rounded-pill shadow-sm"
+                  href="#contact"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+
+      <!-- Hero -->
+      <header class="bg-light py-5">
+        <div class="container px-5">
+          <div class="row align-items-center">
+            <div class="col-lg-8 col-xl-7 col-xxl-6">
+              <div class="my-5">
+                <h2 class="text-center fw-bold mb-2">Hi! I am Himel,</h2>
+                <h2 class="text-primary text-center fw-bold mb-2">
+                  a full-stack web developer
+                </h2>
+                <p class="lead text-muted mb-4">
+                  I specialize in building web applications using React and
+                  Django. Scroll down to see what I have been working on.
+                </p>
+                <div class="d-grid gap-3 d-sm-flex justify-content-center">
+                  <a
+                    class="btn btn-primary btn-large text-uppercase"
+                    href="#about"
+                  >
+                    Learn More
+                    <span class="material-icons-outlined ms-2"
+                      >help_outline</span
+                    >
+                  </a>
+                  <a
+                    class="btn btn-outline-primary btn-large text-uppercase"
+                    href="#projects"
+                  >
+                    View My Work
+                    <span class="material-icons-outlined ms-2"
+                      >manage_search</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-5 col-xxl-6 justify-content-center">
+              <img
+                class="img-fluid rounded-3 my-5"
+                src="https://chisty-himel.vercel.app/_next/image?url=https%3A%2F%2Fcdn.dribbble.com%2Fusers%2F1162077%2Fscreenshots%2F3848914%2Fprogrammer.gif&w=640&q=75"
+                alt="Hero Image"
+              />
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- End Hero -->
+      <hr />
+      <main>
+        <!-- About -->
+        <section id="about" class="py-5 bg-light">
+          <div class="container text-center py-5">
+            <!-- Heading -->
+            <div class="row justify-content-center mb-5">
+              <div class="col-lg-8">
+                <h2 class="fw-bold">About Me</h2>
+                <p class="lead text-muted">
+                  I'm a passionate full-stack web developer with a proven track
+                  record of creating elegant, scalable, and efficient solutions
+                  for clients worldwide.
+                </p>
+              </div>
+            </div>
+
+            <!-- Sections: Education, Experience, Skills -->
+            <div class="container py-5">
+              <div class="row gy-5">
+                <!-- Education and Experience in the Same Row -->
+                <div class="col-lg-6">
+                  <div class="p-4 bg-white rounded shadow-sm">
+                    <h4 class="text-primary mb-4">Education</h4>
+                    <div class="mb-4">
+                      <h6 class="fw-bold">B.Sc. in Computer Science</h6>
+                      <p class="text-muted mb-1">XYZ University, 2018 - 2022</p>
+                      <p class="small text-muted">
+                        Graduated with honors, specializing in software
+                        development, data structures, and algorithms.
+                      </p>
+                    </div>
+                    <div>
+                      <h6 class="fw-bold">Web Development Certification</h6>
+                      <p class="text-muted mb-1">FreeCodeCamp, 2021</p>
+                      <p class="small text-muted">
+                        Focused on responsive web design, JavaScript, and
+                        back-end development.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="p-4 bg-white rounded shadow-sm">
+                    <h4 class="text-primary mb-4">Experience</h4>
+                    <div class="mb-4">
+                      <h6 class="fw-bold">Full-Stack Developer</h6>
+                      <p class="text-muted mb-1">
+                        Tech Innovators Inc. | 2022 - Present
+                      </p>
+                      <p class="small text-muted">
+                        Built responsive web applications using React, Node.js,
+                        and Django, collaborating with cross-functional teams to
+                        deliver high-quality software.
+                      </p>
+                    </div>
+                    <div>
+                      <h6 class="fw-bold">Freelance Web Developer</h6>
+                      <p class="text-muted mb-1">Remote | 2020 - Present</p>
+                      <p class="small text-muted">
+                        Developed custom websites and applications for clients,
+                        focusing on user experience, performance, and SEO
+                        optimization.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Skills Row -->
+              <div class="row mt-5">
+                <div class="col-lg-12">
+                  <div class="p-4 bg-light rounded shadow-sm">
+                    <h4 class="text-primary mb-4">Skills</h4>
+                    <div class="d-flex flex-wrap justify-content-start">
+                      <span class="badge bg-primary text-light fs-6 me-2 mb-2"
+                        >React</span
+                      >
+                      <span class="badge bg-primary text-light fs-6 me-2 mb-2"
+                        >Next.js</span
+                      >
+                      <span class="badge bg-primary text-light fs-6 me-2 mb-2"
+                        >Node.js</span
+                      >
+                      <span class="badge bg-primary text-light fs-6 me-2 mb-2"
+                        >Django</span
+                      >
+                      <span class="badge bg-primary text-light fs-6 me-2 mb-2"
+                        >JavaScript</span
+                      >
+                      <span class="badge bg-primary text-light fs-6 me-2 mb-2"
+                        >TypeScript</span
+                      >
+                      <span class="badge bg-primary text-light fs-6 me-2 mb-2"
+                        >PostgreSQL</span
+                      >
+                      <span class="badge bg-primary text-light fs-6 me-2 mb-2"
+                        >Firebase</span
+                      >
+                      <span class="badge bg-primary text-light fs-6 me-2 mb-2"
+                        >Bootstrap</span
+                      >
+                      <span class="badge bg-primary text-light fs-6 me-2 mb-2"
+                        >Material UI</span
+                      >
+                      <span class="badge bg-primary text-light fs-6 me-2 mb-2"
+                        >Git</span
+                      >
+                      <span class="badge bg-primary text-light fs-6 me-2 mb-2"
+                        >REST APIs</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Design, Development, Maintenance -->
+          <div class="container text-center mt-5">
+            <div class="row gy-4">
+              <!-- Design -->
+              <div class="col-lg-4">
+                <div class="p-4 bg-white rounded shadow-sm">
+                  <span class="material-icons-outlined text-primary fs-1"
+                    >palette</span
+                  >
+                  <h5 class="fw-bold mt-3">Design</h5>
+                  <p class="text-muted">
+                    Crafting modern, visually appealing, and user-centric
+                    designs that work seamlessly across all devices.
+                  </p>
+                </div>
+              </div>
+              <!-- Development -->
+              <div class="col-lg-4">
+                <div class="p-4 bg-white rounded shadow-sm">
+                  <span class="material-icons-outlined text-primary fs-1"
+                    >code</span
+                  >
+                  <h5 class="fw-bold mt-3">Development</h5>
+                  <p class="text-muted">
+                    Writing clean, efficient code to build responsive and
+                    scalable web applications using the latest technologies.
+                  </p>
+                </div>
+              </div>
+              <!-- Maintenance -->
+              <div class="col-lg-4">
+                <div class="p-4 bg-white rounded shadow-sm">
+                  <span class="material-icons-outlined text-primary fs-1"
+                    >settings</span
+                  >
+                  <h5 class="fw-bold mt-3">Launch & Maintenance</h5>
+                  <p class="text-muted">
+                    Ensuring seamless deployment, smooth performance, and
+                    regular updates to keep your applications running
+                    flawlessly.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End About -->
+
+        <hr />
+
+        <!-- Academic Projects Section -->
+        <section id="academic-projects" class="py-5 bg-light">
+          <div class="container">
+            <div class="row justify-content-center mb-5">
+              <h2 class="fw-bold text-center">Academic Projects</h2>
+              <p class="lead text-muted text-center mb-5">
+                Here are some of the key academic projects and research papers
+                I’ve worked on during my studies.
+              </p>
+            </div>
+
+            <!-- Project 1 -->
+            <div class="row mb-4">
+              <div class="col-lg-6">
+                <div class="card shadow-sm rounded">
+                  <img
+                    src="/images/project5.png"
+                    class="card-img-top img-fluid"
+                    alt="Project 1 Image"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-primary">
+                      AI-Based Chatbot for Customer Support
+                    </h5>
+                    <p class="card-text text-muted">
+                      <strong>Role:</strong> Lead Developer |
+                      <strong>Objective:</strong> To build an AI-powered chatbot
+                      capable of answering customer queries autonomously.
+                    </p>
+                    <p class="text-muted mb-2">
+                      <strong>Tools Used:</strong> Python, TensorFlow, Flask
+                    </p>
+                    <p class="small text-muted">
+                      Developed an intelligent chatbot that improves customer
+                      service efficiency by handling basic queries, reducing
+                      response times.
+                    </p>
+                    <p>
+                      <strong>Result:</strong> The project successfully reduced
+                      customer support response time by 30% and increased
+                      customer satisfaction by 20%.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="card shadow-sm rounded">
+                  <img
+                    src="images/project4.jpg"
+                    class="card-img-top"
+                    alt="Project 4 Image"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-primary">
+                      Blockchain for Secure Voting
+                    </h5>
+                    <p class="card-text text-muted">
+                      <strong>Role:</strong> Developer |
+                      <strong>Objective:</strong> To develop a blockchain-based
+                      voting system for secure elections.
+                    </p>
+                    <p class="text-muted mb-2">
+                      <strong>Tools Used:</strong> Solidity, Ethereum,
+                      JavaScript
+                    </p>
+                    <p class="small text-muted">
+                      Developed a secure voting platform using blockchain
+                      technology to ensure transparency and immutability of
+                      votes.
+                    </p>
+                    <p>
+                      <strong>Result:</strong> The platform enhanced election
+                      security, preventing fraud and ensuring data integrity
+                      during elections.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Academic Projects Section -->
+
+        <hr />
+
+        <!-- Technical Skills Section -->
+        <section id="technical-skills" class="py-5 bg-light">
+          <div class="container">
+            <div class="row justify-content-center mb-5">
+              <h2 class="fw-bold text-center">Technical Skills</h2>
+              <p class="lead text-muted text-center mb-5">
+                Here’s a list of the technical skills I have acquired during my
+                studies and practical experience.
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 mb-4">
+                <h4 class="text-primary">Programming Languages</h4>
+                <ul class="list-unstyled">
+                  <li>Python</li>
+                  <li>JavaScript</li>
+                  <li>C++</li>
+                  <li>Java</li>
+                  <li>SQL</li>
+                </ul>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <h4 class="text-primary">Software & Tools</h4>
+                <ul class="list-unstyled">
+                  <li>Git</li>
+                  <li>Docker</li>
+                  <li>Jupyter Notebooks</li>
+                  <li>MATLAB</li>
+                  <li>VS Code</li>
+                </ul>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <h4 class="text-primary">Lab Techniques & Methods</h4>
+                <ul class="list-unstyled">
+                  <li>Data Analysis</li>
+                  <li>Machine Learning Algorithms</li>
+                  <li>Statistical Methods</li>
+                  <li>Data Visualization</li>
+                  <li>Optimization Techniques</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Research Experience Section -->
+        <section id="research-experience" class="py-5">
+          <div class="container">
+            <div class="row justify-content-center mb-5">
+              <h2 class="fw-bold text-center">Research Experience</h2>
+              <p class="lead text-muted text-center mb-5">
+                Here’s a summary of the research work, internships, and lab
+                experience I have undertaken during my academic journey.
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 mb-4">
+                <div class="card shadow-sm rounded">
+                  <div class="card-body">
+                    <h5 class="card-title text-primary">
+                      Research on AI for Healthcare
+                    </h5>
+                    <p class="card-text text-muted">
+                      <strong>Role:</strong> Research Assistant |
+                      <strong>Period:</strong> 2022-2023
+                    </p>
+                    <p class="small text-muted">
+                      Investigated the use of Artificial Intelligence in
+                      healthcare applications, focusing on predictive models for
+                      disease diagnosis using machine learning algorithms.
+                    </p>
+                    <p>
+                      <strong>Responsibilities:</strong> Conducted experiments,
+                      analyzed datasets, and developed machine learning models.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 mb-4">
+                <div class="card shadow-sm rounded">
+                  <div class="card-body">
+                    <h5 class="card-title text-primary">
+                      Blockchain for Data Integrity
+                    </h5>
+                    <p class="card-text text-muted">
+                      <strong>Role:</strong> Intern |
+                      <strong>Period:</strong> Summer 2021
+                    </p>
+                    <p class="small text-muted">
+                      Worked on the development of a blockchain-based solution
+                      for ensuring data integrity in medical records.
+                    </p>
+                    <p>
+                      <strong>Responsibilities:</strong> Developed smart
+                      contracts, integrated blockchain with databases, and
+                      tested security protocols.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Publications and Presentations Section -->
+        <section id="publications-presentations" class="py-5 bg-light">
+          <div class="container">
+            <div class="row justify-content-center mb-5">
+              <h2 class="fw-bold text-center">
+                Publications and Presentations
+              </h2>
+              <p class="lead text-muted text-center mb-5">
+                I have published articles and presented papers on various topics
+                in the field of technology and research.
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 mb-4">
+                <h5 class="text-primary">
+                  "AI for Predicting Disease Outcomes" - Journal of Machine
+                  Learning
+                </h5>
+                <p class="small text-muted">
+                  <strong>Published:</strong> 2023 | <strong>Summary:</strong> A
+                  study on AI-powered prediction systems for predicting patient
+                  outcomes in hospitals.
+                </p>
+              </div>
+              <div class="col-lg-6 mb-4">
+                <h5 class="text-primary">
+                  "Blockchain Technology in Healthcare" - Tech Innovations
+                  Conference
+                </h5>
+                <p class="small text-muted">
+                  <strong>Presented:</strong> 2022 |
+                  <strong>Summary:</strong> Discussed the application of
+                  blockchain in healthcare systems for secure patient data
+                  storage and management.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Certifications and Courses Section -->
+        <section id="certifications-courses" class="py-5">
+          <div class="container">
+            <div class="row justify-content-center mb-5">
+              <h2 class="fw-bold text-center">Certifications & Courses</h2>
+              <p class="lead text-muted text-center mb-5">
+                These are some of the specialized courses and certifications I
+                have completed during my MSc studies.
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 mb-4">
+                <h5 class="text-primary">Certified AI Specialist</h5>
+                <p class="small text-muted">
+                  Completed in 2023 - Coursera | Focused on Machine Learning and
+                  Artificial Intelligence principles.
+                </p>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <h5 class="text-primary">Web Development Bootcamp</h5>
+                <p class="small text-muted">
+                  Completed in 2022 - Udemy | Full-stack development using
+                  React, Node.js, and Express.js.
+                </p>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <h5 class="text-primary">
+                  Blockchain Technology Certification
+                </h5>
+                <p class="small text-muted">
+                  Completed in 2021 - edX | Hands-on experience with blockchain
+                  platforms and smart contracts.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section id="professional-experience" class="py-5 bg-light">
+          <div class="container">
+            <div class="row justify-content-center mb-5">
+              <h2 class="fw-bold text-center">Professional Experience</h2>
+              <p class="lead text-muted text-center mb-5">
+                Below are some of the internships and professional roles I have
+                held during my studies.
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 mb-4">
+                <div class="card shadow-sm rounded">
+                  <div class="card-body">
+                    <h5 class="card-title text-primary">
+                      Software Engineering Intern
+                    </h5>
+                    <p class="card-text text-muted">
+                      <strong>Company:</strong> Tech Innovations |
+                      <strong>Duration:</strong> Summer 2022
+                    </p>
+                    <p class="small text-muted">
+                      Assisted in the development and testing of software
+                      solutions for internal systems and customer applications.
+                    </p>
+                    <p>
+                      <strong>Responsibilities:</strong> Writing and reviewing
+                      code, bug fixes, and integrating features into existing
+                      products.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 mb-4">
+                <div class="card shadow-sm rounded">
+                  <div class="card-body">
+                    <h5 class="card-title text-primary">Junior Data Analyst</h5>
+                    <p class="card-text text-muted">
+                      <strong>Company:</strong> Data Insights |
+                      <strong>Duration:</strong> Fall 2021
+                    </p>
+                    <p class="small text-muted">
+                      Worked as a Junior Data Analyst helping to process and
+                      visualize data sets for business insights.
+                    </p>
+                    <p>
+                      <strong>Responsibilities:</strong> Data cleaning,
+                      performing analysis, and creating reports for the
+                      management team.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Curricular Activities Section -->
+        <section id="curricular-activities" class="py-5 bg-light">
+          <div class="container">
+            <div class="row justify-content-center mb-5">
+              <h2 class="fw-bold text-center">Curricular Activities</h2>
+              <p class="lead text-muted text-center mb-5">
+                Active participation in various extracurricular and volunteer
+                activities that complement my academic development.
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 mb-4">
+                <h5 class="text-primary">Volunteer - Code for Good</h5>
+                <p class="small text-muted">
+                  Worked with a team of developers to teach coding skills to
+                  underprivileged children.
+                </p>
+              </div>
+              <div class="col-lg-6 mb-4">
+                <h5 class="text-primary">Member - University Robotics Club</h5>
+                <p class="small text-muted">
+                  Collaborated on building autonomous robots for university
+                  competitions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Future Goals Section -->
+        <section id="future-goals" class="py-5">
+          <div class="container">
+            <div class="row justify-content-center mb-5">
+              <h2 class="fw-bold text-center">Future Goals</h2>
+              <p class="lead text-muted text-center mb-5">
+                My future goals include contributing to advancements in AI and
+                blockchain, with a focus on real-world applications.
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 mb-4">
+                <h5 class="text-primary">AI in Healthcare</h5>
+                <p class="small text-muted">
+                  Researching innovative AI applications to improve healthcare
+                  diagnostics and patient care.
+                </p>
+              </div>
+              <div class="col-lg-6 mb-4">
+                <h5 class="text-primary">Blockchain for Security</h5>
+                <p class="small text-muted">
+                  Focusing on secure and decentralized applications for data
+                  protection and privacy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="text-center py-5">
+          <div class="container py-5">
+            <div class="row justify-content-center">
+              <h2 class="fw-bold">Projects</h2>
+              <p class="lead text-muted mb-5">
+                View some of my latest projects
+              </p>
+            </div>
+          </div>
+          <div class="container mb-5">
+            <div class="row">
+              <!-- Web Application -->
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img
+                    class="card-img-top"
+                    src="images/project1.png"
+                    alt="Project 1"
+                  />
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3">Web Application</h5>
+                    <div class="mb-2">
+                      <div class="badge bg-primary rounded-pill">React</div>
+                      <div class="badge bg-primary rounded-pill">
+                        Styled Components
+                      </div>
+                      <div class="badge bg-primary rounded-pill">
+                        Material UI
+                      </div>
+                    </div>
+                    <p class="card-text">
+                      A full-featured responsive single-page web application for
+                      a Netherlands-based startup company named Orange
+                      Programming.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent mb-3">
+                    <a
+                      class="btn btn-outline-primary btn-sm text-uppercase"
+                      href="https://www.abroadinquiry.com/"
+                      target="_blank"
+                    >
+                      <span class="material-icons-outlined me-1">code</span>
+                      Source Code
+                    </a>
+                    <a
+                      class="btn btn-primary btn-sm text-uppercase"
+                      href="https://www.abroadinquiry.com/"
+                      target="_blank"
+                    >
+                      <span class="material-icons-outlined me-1"
+                        >visibility</span
+                      >
+                      Live Link
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Web & Mobile Application -->
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img
+                    class="card-img-top"
+                    src="images/project2.png"
+                    alt="Project 2"
+                  />
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3">Web & Mobile Application</h5>
+                    <div class="mb-2">
+                      <div class="badge bg-primary rounded-pill">React</div>
+                      <div class="badge bg-primary rounded-pill">Next JS</div>
+                      <div class="badge bg-primary rounded-pill">Node JS</div>
+                      <div class="badge bg-primary rounded-pill">
+                        Express JS
+                      </div>
+                      <div class="badge bg-primary rounded-pill">MySQL</div>
+                      <div class="badge bg-primary rounded-pill">Firebase</div>
+                      <div class="badge bg-primary rounded-pill">
+                        Material UI
+                      </div>
+                    </div>
+                    <p class="card-text">
+                      A full-featured responsive web application and mobile
+                      application with authentication, chatting & appointment
+                      booking features, and an admin panel for Abroad Inquiry.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent mb-3">
+                    <a
+                      class="btn btn-outline-primary btn-sm text-uppercase"
+                      href="https://www.abroadinquiry.com/"
+                      target="_blank"
+                    >
+                      <span class="material-icons-outlined me-1">code</span>
+                      Source Code
+                    </a>
+                    <a
+                      class="btn btn-primary btn-sm text-uppercase"
+                      href="https://www.abroadinquiry.com/"
+                      target="_blank"
+                    >
+                      <span class="material-icons-outlined me-1"
+                        >visibility</span
+                      >
+                      Live Link
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Mobile Application -->
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img
+                    class="card-img-top"
+                    src="images/project3.png"
+                    alt="Project 3"
+                  />
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3">Mobile Application</h5>
+                    <div class="mb-2">
+                      <div class="badge bg-primary rounded-pill">
+                        React Native
+                      </div>
+                      <div class="badge bg-primary rounded-pill">Redux</div>
+                      <div class="badge bg-primary rounded-pill">Firebase</div>
+                      <div class="badge bg-primary rounded-pill">
+                        React Native Paper
+                      </div>
+                      <div class="badge bg-primary rounded-pill">
+                        Material UI
+                      </div>
+                    </div>
+                    <p class="card-text">
+                      An intuitive and modern mobile app tailored for both iOS
+                      and Android platforms, designed to provide a smooth
+                      experience for students seeking opportunities to study
+                      abroad.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent mb-3">
+                    <a
+                      class="btn btn-primary btn-sm text-uppercase"
+                      href="https://play.google.com/store/apps/details?id=com.abroadinquiry.app"
+                      target="_blank"
+                    >
+                      Play Store
+                    </a>
+                    <a
+                      class="btn btn-primary btn-sm text-uppercase"
+                      href="https://apps.apple.com/us/app/abroad-inquiry/id1664679066"
+                      target="_blank"
+                    >
+                      Appstore
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Projects -->
+
+        <hr />
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="text-center py-5 bg-light">
+          <div class="container py-5">
+            <div class="row justify-content-center">
+              <h2 class="fw-bold display-5 mb-3">What Clients Say</h2>
+              <p class="lead text-muted mb-5">
+                Hear from my clients about their experiences working with me.
+              </p>
+            </div>
+            <div class="row gx-4 gy-5">
+              <!-- Testimonial 1 -->
+              <div class="col-lg-4">
+                <div class="card shadow-lg border-0 rounded-4 h-100">
+                  <div class="card-body p-4">
+                    <div class="mb-4">
+                      <img
+                        class="rounded-circle border border-primary mb-3"
+                        src="images/user1.png"
+                        alt="User 1"
+                        style="width: 80px; height: 80px"
+                      />
+                      <h5 class="fw-bold mb-0">Amy Jones</h5>
+                      <p class="text-muted">CEO, Company 1</p>
+                    </div>
+                    <p class="text-muted fst-italic">
+                      "Working with this team has been an absolute pleasure. The
+                      results exceeded our expectations!"
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 2 -->
+              <div class="col-lg-4">
+                <div class="card shadow-lg border-0 rounded-4 h-100">
+                  <div class="card-body p-4">
+                    <div class="mb-4">
+                      <img
+                        class="rounded-circle border border-primary mb-3"
+                        src="images/user2.png"
+                        alt="User 2"
+                        style="width: 80px; height: 80px"
+                      />
+                      <h5 class="fw-bold mb-0">James Smith</h5>
+                      <p class="text-muted">CEO, Company 2</p>
+                    </div>
+                    <p class="text-muted fst-italic">
+                      "The attention to detail and creativity is unmatched.
+                      Truly a game-changer for our business."
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 3 -->
+              <div class="col-lg-4">
+                <div class="card shadow-lg border-0 rounded-4 h-100">
+                  <div class="card-body p-4">
+                    <div class="mb-4">
+                      <img
+                        class="rounded-circle border border-primary mb-3"
+                        src="images/user3.png"
+                        alt="User 3"
+                        style="width: 80px; height: 80px"
+                      />
+                      <h5 class="fw-bold mb-0">Mary Richards</h5>
+                      <p class="text-muted">CEO, Company 3</p>
+                    </div>
+                    <p class="text-muted fst-italic">
+                      "Exceptional quality and fantastic communication
+                      throughout the entire process. Highly recommend!"
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Testimonials -->
+
+        <hr />
+
+        <!-- Contact -->
+        <section id="contact" class="py-5 bg-light">
+          <div class="container text-center py-5">
+            <!-- Heading -->
+            <div class="row justify-content-center mb-5">
+              <div class="col-lg-8">
+                <h2 class="fw-bold mb-4">Get in Touch</h2>
+                <p class="lead text-muted">
+                  Interested in working together or have any questions? Reach
+                  out to me, and I’ll get back to you as soon as possible!
+                </p>
+              </div>
+            </div>
+
+            <!-- Contact Details -->
+            <div class="row gy-5">
+              <!-- Left: Contact Information -->
+              <div class="col-md-6 text-start">
+                <h4 class="text-primary mb-4">Contact Information</h4>
+                <div class="mb-4">
+                  <h6 class="text-uppercase mb-2">Address</h6>
+                  <p class="lead mb-0">
+                    <span class="material-icons-outlined me-2 text-primary"
+                      >place</span
+                    >
+                    Dhaka, Bangladesh
+                  </p>
+                </div>
+                <div class="mb-4">
+                  <h6 class="text-uppercase mb-2">Phone</h6>
+                  <p class="lead mb-0">
+                    <span class="material-icons-outlined me-2 text-primary"
+                      >phone</span
+                    >
+                    +8801952910203
+                  </p>
+                </div>
+                <div class="mb-4">
+                  <h6 class="text-uppercase mb-2">Email</h6>
+                  <p class="lead mb-0">
+                    <span class="material-icons-outlined me-2 text-primary"
+                      >email</span
+                    >
+                    fazle.chisty@gmail.com
+                  </p>
+                </div>
+              </div>
+
+              <!-- Right: Contact Form -->
+              <div class="col-md-6">
+                <h4 class="text-primary mb-4">Send a Message</h4>
+                <form>
+                  <div class="form-floating mb-4">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                      required
+                    />
+                    <label for="name">Your Name</label>
+                  </div>
+                  <div class="form-floating mb-4">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Your Email"
+                      required
+                    />
+                    <label for="email">Your Email</label>
+                  </div>
+                  <div class="form-floating mb-4">
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      placeholder="Your Message"
+                      style="height: 150px"
+                      required
+                    ></textarea>
+                    <label for="message">Your Message</label>
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn btn-primary px-5 py-2 rounded-pill shadow-sm"
+                  >
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Contact -->
+      </main>
+    </div>
+
+    <hr />
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+      <div class="container px-5 mb-2">Copyright &copy; 2024 Chisty Himel.</div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
