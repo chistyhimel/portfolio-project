@@ -24,7 +24,10 @@
     />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   </head>
   <body>
     <div class="container-fluid px-0">
@@ -102,7 +105,6 @@
       </nav>
       <!-- End Navbar -->
 
-      <!-- Hero -->
       <header
         class="hero-section position-relative text-white py-5"
         style="
@@ -111,6 +113,9 @@
           min-height: 100vh;
         "
       >
+        <!-- Particles Background -->
+        <div id="particles-js"></div>
+
         <!-- Overlay -->
         <div
           class="overlay"
@@ -121,11 +126,15 @@
             left: 0;
             width: 100%;
             height: 100%;
+            z-index: 1;
           "
         ></div>
 
         <!-- Content -->
-        <div class="container position-relative text-center text-md-start py-5">
+        <div
+          class="container position-relative text-center text-md-start py-5"
+          style="z-index: 2"
+        >
           <div class="row align-items-center">
             <div class="col-lg-8 col-xl-7 col-xxl-6">
               <div class="my-5">
@@ -173,23 +182,23 @@
         </div>
       </header>
 
-      <!-- End Hero -->
       <hr />
       <main>
         <!-- About -->
-        <section id="about" class="py-5 bg-light">
+        <section id="about" class="py-5">
           <div class="container text-center py-5">
             <!-- Heading -->
             <div class="row justify-content-center mb-5">
-              <div class="col-lg-8"></div>
+              <div class="col-lg-8">
+                <h2 id="about-heading" class="fw-bold">About Me</h2>
+              </div>
             </div>
 
             <!-- Profile Section -->
             <div class="row justify-content-center align-items-center">
               <!-- Text Section -->
               <div class="col-lg-6 text-center text-lg-start">
-                <h2 class="fw-bold">About Me</h2>
-                <p class="lead text-muted">
+                <p id="about-text" class="lead text-muted">
                   Hello! I’m Fazle Chisty Himel, an MSS student in Information
                   Science and Library Management at Noakhali Science and
                   Technology University. Passionate about knowledge
@@ -201,7 +210,8 @@
               <!-- Image Section -->
               <div class="col-lg-4">
                 <img
-                  src="/images/photo.jpeg.jpg"
+                  id="about-image"
+                  src="./images/photo.jpeg.jpg"
                   alt="Fazle Chisty Himel"
                   class="img-fluid rounded-circle shadow-lg"
                   style="max-width: 300px; height: auto"
@@ -210,6 +220,297 @@
             </div>
           </div>
         </section>
+
+        <hr />
+
+        <!-- Academic Projects Section -->
+        <section id="academic-projects" class="py-5 bg-light">
+          <div class="container">
+            <div class="row justify-content-center mb-5">
+              <h2 class="fw-bold text-center">Academic Projects</h2>
+              <p class="lead text-muted text-center mb-5">
+                Here are some of the key academic projects and research papers
+                I’ve worked on during my studies.
+              </p>
+            </div>
+
+            <!-- Project 1 -->
+            <div class="row mb-4">
+              <div class="col-lg-6">
+                <div class="card shadow-sm rounded">
+                  <img
+                    src="./images/project5.png"
+                    class="card-img-top img-fluid"
+                    alt="Project 1 Image"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-primary">
+                      AI-Based Chatbot for Customer Support
+                    </h5>
+                    <p class="card-text text-muted">
+                      <strong>Role:</strong> Lead Developer |
+                      <strong>Objective:</strong> To build an AI-powered chatbot
+                      capable of answering customer queries autonomously.
+                    </p>
+                    <p class="text-muted mb-2">
+                      <strong>Tools Used:</strong> Python, TensorFlow, Flask
+                    </p>
+                    <p class="small text-muted">
+                      Developed an intelligent chatbot that improves customer
+                      service efficiency by handling basic queries, reducing
+                      response times.
+                    </p>
+                    <p>
+                      <strong>Result:</strong> The project successfully reduced
+                      customer support response time by 30% and increased
+                      customer satisfaction by 20%.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="card shadow-sm rounded">
+                  <img
+                    src="./images/project4.jpg"
+                    class="card-img-top"
+                    alt="Project 4 Image"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-primary">
+                      Blockchain for Secure Voting
+                    </h5>
+                    <p class="card-text text-muted">
+                      <strong>Role:</strong> Developer |
+                      <strong>Objective:</strong> To develop a blockchain-based
+                      voting system for secure elections.
+                    </p>
+                    <p class="text-muted mb-2">
+                      <strong>Tools Used:</strong> Solidity, Ethereum,
+                      JavaScript
+                    </p>
+                    <p class="small text-muted">
+                      Developed a secure voting platform using blockchain
+                      technology to ensure transparency and immutability of
+                      votes.
+                    </p>
+                    <p>
+                      <strong>Result:</strong> The platform enhanced election
+                      security, preventing fraud and ensuring data integrity
+                      during elections.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Academic Projects Section -->
+
+        <hr />
+
+        <!-- Technical Skills Section -->
+        <section
+          id="technical-skills"
+          class="py-5"
+          style="
+            background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+            color: #fff;
+          "
+        >
+          <div class="container">
+            <!-- Technical Skills Heading -->
+            <div class="row justify-content-center mb-5">
+              <h2 class="fw-bold text-center" style="font-size: 2.5rem">
+                Technical Skills
+              </h2>
+              <p class="lead text-center mb-4" style="font-size: 1.1rem">
+                Here’s a list of the technical skills I have acquired during my
+                studies and practical experience.
+              </p>
+            </div>
+
+            <!-- Skills Columns -->
+            <div class="row">
+              <!-- Programming Languages -->
+              <div class="col-lg-4 mb-4">
+                <h4 class="text-light d-flex align-items-center">
+                  <i class="fab fa-python fa-2x me-2"></i> Programming Languages
+                </h4>
+                <ul class="list-unstyled">
+                  <li><i class="fab fa-python text-warning me-2"></i>Python</li>
+                  <li>
+                    <i class="fab fa-js-square text-warning me-2"></i>JavaScript
+                  </li>
+                  <li><i class="fab fa-java text-danger me-2"></i>Java</li>
+                  <li><i class="fab fa-cuttlefish text-info me-2"></i>C++</li>
+                  <li><i class="fas fa-database text-muted me-2"></i>SQL</li>
+                </ul>
+              </div>
+
+              <!-- Software & Tools -->
+              <div class="col-lg-4 mb-4">
+                <h4 class="text-light d-flex align-items-center">
+                  <i class="fas fa-tools fa-2x me-2"></i> Software & Tools
+                </h4>
+                <ul class="list-unstyled">
+                  <li><i class="fab fa-github text-dark me-2"></i>Git</li>
+                  <li><i class="fab fa-docker text-primary me-2"></i>Docker</li>
+                  <li>
+                    <i class="fas fa-laptop-code text-success me-2"></i>Jupyter
+                    Notebooks
+                  </li>
+                  <li><i class="fas fa-cogs text-danger me-2"></i>MATLAB</li>
+                  <li><i class="fab fa-vscode text-info me-2"></i>VS Code</li>
+                </ul>
+              </div>
+
+              <!-- Lab Techniques & Methods -->
+              <div class="col-lg-4 mb-4">
+                <h4 class="text-light d-flex align-items-center">
+                  <i class="fas fa-flask fa-2x me-2"></i> Lab Techniques &
+                  Methods
+                </h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="fas fa-chart-line text-success me-2"></i>Data
+                    Analysis
+                  </li>
+                  <li>
+                    <i class="fas fa-robot text-primary me-2"></i>Machine
+                    Learning Algorithms
+                  </li>
+                  <li>
+                    <i class="fas fa-calculator text-warning me-2"></i
+                    >Statistical Methods
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-pie text-info me-2"></i>Data
+                    Visualization
+                  </li>
+                  <li>
+                    <i class="fas fa-bullseye text-muted me-2"></i>Optimization
+                    Techniques
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Technical Skills Section -->
+
+        <!-- Research Experience Section -->
+        <section id="research-experience" class="py-5">
+          <div class="container">
+            <div class="row justify-content-center mb-5">
+              <h2 class="fw-bold text-center">Research Experience</h2>
+              <p class="lead text-muted text-center mb-5">
+                Here’s a summary of the research work, internships, and lab
+                experience I have undertaken during my academic journey.
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 mb-4">
+                <div class="card shadow-sm rounded">
+                  <div class="card-body">
+                    <h5 class="card-title text-primary">
+                      Research on AI for Healthcare
+                    </h5>
+                    <p class="card-text text-muted">
+                      <strong>Role:</strong> Research Assistant |
+                      <strong>Period:</strong> 2022-2023
+                    </p>
+                    <p class="small text-muted">
+                      Investigated the use of Artificial Intelligence in
+                      healthcare applications, focusing on predictive models for
+                      disease diagnosis using machine learning algorithms.
+                    </p>
+                    <p>
+                      <strong>Responsibilities:</strong> Conducted experiments,
+                      analyzed datasets, and developed machine learning models.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 mb-4">
+                <div class="card shadow-sm rounded">
+                  <div class="card-body">
+                    <h5 class="card-title text-primary">
+                      Blockchain for Data Integrity
+                    </h5>
+                    <p class="card-text text-muted">
+                      <strong>Role:</strong> Intern |
+                      <strong>Period:</strong> Summer 2021
+                    </p>
+                    <p class="small text-muted">
+                      Worked on the development of a blockchain-based solution
+                      for ensuring data integrity in medical records.
+                    </p>
+                    <p>
+                      <strong>Responsibilities:</strong> Developed smart
+                      contracts, integrated blockchain with databases, and
+                      tested security protocols.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Publications and Presentations Section -->
+        <section
+          id="publications-presentations"
+          class="py-5 my-5"
+          style="
+            background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+            color: #fff;
+          "
+        >
+          <div class="container">
+            <!-- Section Header -->
+            <div class="row justify-content-center mb-5">
+              <h2 class="fw-bold text-center" style="font-size: 2.5rem">
+                Publications and Presentations
+              </h2>
+              <p class="lead text-center mb-4" style="font-size: 1.1rem">
+                I have published articles and presented papers on various topics
+                in the field of technology and research.
+              </p>
+            </div>
+
+            <!-- Publications and Presentations -->
+            <div class="row">
+              <!-- Publication 1 -->
+              <div class="col-lg-6 mb-4">
+                <h5 class="text-light">
+                  "AI for Predicting Disease Outcomes" -
+                  <span class="text-warning">Journal of Machine Learning</span>
+                </h5>
+                <p class="small text-light">
+                  <strong>Published:</strong> 2023 | <strong>Summary:</strong> A
+                  study on AI-powered prediction systems for predicting patient
+                  outcomes in hospitals.
+                </p>
+              </div>
+
+              <!-- Presentation 1 -->
+              <div class="col-lg-6 mb-4">
+                <h5 class="text-light">
+                  "Blockchain Technology in Healthcare" -
+                  <span class="text-warning">Tech Innovations Conference</span>
+                </h5>
+                <p class="small text-light">
+                  <strong>Presented:</strong> 2022 |
+                  <strong>Summary:</strong> Discussed the application of
+                  blockchain in healthcare systems for secure patient data
+                  storage and management.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr />
 
         <!-- Education Section -->
         <section id="education" class="py-5">
@@ -349,7 +650,7 @@
               <div class="col-lg-4 mb-4">
                 <div class="card border-0 shadow-sm">
                   <img
-                    src="/images/c-1.jpg"
+                    src="./images/c-1.jpg"
                     alt="Programming Hero"
                     class="card-img-top rounded-top"
                     style="height: 200px; object-fit: cover"
@@ -373,7 +674,7 @@
               <div class="col-lg-4 mb-4">
                 <div class="card border-0 shadow-sm">
                   <img
-                    src="/images/c-2.jpg"
+                    src="./images/c-2.jpg"
                     alt="Coursera"
                     class="card-img-top rounded-top"
                     style="height: 200px; object-fit: cover"
@@ -397,7 +698,7 @@
               <div class="col-lg-4 mb-4">
                 <div class="card border-0 shadow-sm">
                   <img
-                    src="/images/c-3.jpg"
+                    src="./images/c-3.jpg"
                     alt="Learn with Sumit"
                     class="card-img-top rounded-top"
                     style="height: 200px; object-fit: cover"
@@ -633,7 +934,7 @@
                     <div class="mb-4">
                       <img
                         class="rounded-circle border border-primary mb-3"
-                        src="images/user1.png"
+                        src="./images/user1.png"
                         alt="User 1"
                         style="width: 80px; height: 80px"
                       />
@@ -655,7 +956,7 @@
                     <div class="mb-4">
                       <img
                         class="rounded-circle border border-primary mb-3"
-                        src="images/user2.png"
+                        src="./images/user2.png"
                         alt="User 2"
                         style="width: 80px; height: 80px"
                       />
@@ -677,7 +978,7 @@
                     <div class="mb-4">
                       <img
                         class="rounded-circle border border-primary mb-3"
-                        src="images/user3.png"
+                        src="./images/user3.png"
                         alt="User 3"
                         style="width: 80px; height: 80px"
                       />
@@ -918,6 +1219,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Custom JS -->
-    <script src="js/scripts.js"></script>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
