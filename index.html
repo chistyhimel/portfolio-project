@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Portfolio Website</title>
+    <title>Chisty Himel - Portfolio</title>
 
     <!-- Montserrat Font -->
     <link
@@ -67,14 +67,23 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark px-3 fw-semibold" href="#projects"
+                <a
+                  class="nav-link text-dark px-3 fw-semibold"
+                  href="/academic-profile.html"
+                  >Academic Profile</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-dark px-3 fw-semibold"
+                  href="/projects.html"
                   >Projects</a
                 >
               </li>
               <li class="nav-item">
                 <a
                   class="nav-link text-dark px-3 fw-semibold"
-                  href="#testimonials"
+                  href="/#testimonials"
                   >Testimonials</a
                 >
               </li>
@@ -94,22 +103,46 @@
       <!-- End Navbar -->
 
       <!-- Hero -->
-      <header class="bg-light py-5">
-        <div class="container px-5">
+      <header
+        class="hero-section position-relative text-white py-5"
+        style="
+          background: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?fit=crop&w=1920&q=80')
+            no-repeat center center/cover;
+          min-height: 100vh;
+        "
+      >
+        <!-- Overlay -->
+        <div
+          class="overlay"
+          style="
+            background: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          "
+        ></div>
+
+        <!-- Content -->
+        <div class="container position-relative text-center text-md-start py-5">
           <div class="row align-items-center">
             <div class="col-lg-8 col-xl-7 col-xxl-6">
               <div class="my-5">
-                <h2 class="text-center fw-bold mb-2">Hi! I am Himel,</h2>
-                <h2 class="text-primary text-center fw-bold mb-2">
-                  a full-stack web developer
+                <h2 class="display-4 fw-bold mb-3">
+                  Hi! I’m Fazle Chisty Himel,
                 </h2>
-                <p class="lead text-muted mb-4">
-                  I specialize in building web applications using React and
-                  Django. Scroll down to see what I have been working on.
+                <h3 class="text-primary fw-bold mb-3">
+                  A Full-Stack Web Developer
+                </h3>
+                <p class="lead mb-4">
+                  Specializing in crafting responsive web applications using
+                  React and Django. Let’s explore my journey and the projects
+                  I’ve built to make the digital world better.
                 </p>
-                <div class="d-grid gap-3 d-sm-flex justify-content-center">
+                <div class="d-grid gap-3 d-sm-flex justify-content-md-start">
                   <a
-                    class="btn btn-primary btn-large text-uppercase"
+                    class="btn btn-primary btn-lg text-uppercase px-4 py-2"
                     href="#about"
                   >
                     Learn More
@@ -118,7 +151,7 @@
                     >
                   </a>
                   <a
-                    class="btn btn-outline-primary btn-large text-uppercase"
+                    class="btn btn-outline-light btn-lg text-uppercase px-4 py-2"
                     href="#projects"
                   >
                     View My Work
@@ -139,6 +172,7 @@
           </div>
         </div>
       </header>
+
       <!-- End Hero -->
       <hr />
       <main>
@@ -147,400 +181,160 @@
           <div class="container text-center py-5">
             <!-- Heading -->
             <div class="row justify-content-center mb-5">
-              <div class="col-lg-8">
+              <div class="col-lg-8"></div>
+            </div>
+
+            <!-- Profile Section -->
+            <div class="row justify-content-center align-items-center">
+              <!-- Text Section -->
+              <div class="col-lg-6 text-center text-lg-start">
                 <h2 class="fw-bold">About Me</h2>
                 <p class="lead text-muted">
-                  I'm a passionate full-stack web developer with a proven track
-                  record of creating elegant, scalable, and efficient solutions
-                  for clients worldwide.
+                  Hello! I’m Fazle Chisty Himel, an MSS student in Information
+                  Science and Library Management at Noakhali Science and
+                  Technology University. Passionate about knowledge
+                  organization, research, and leveraging technology to innovate
+                  library systems for the digital age.
                 </p>
               </div>
-            </div>
 
-            <!-- Sections: Education, Experience, Skills -->
-            <div class="container py-5">
-              <div class="row gy-5">
-                <!-- Education and Experience in the Same Row -->
-                <div class="col-lg-6">
-                  <div class="p-4 bg-white rounded shadow-sm">
-                    <h4 class="text-primary mb-4">Education</h4>
-                    <div class="mb-4">
-                      <h6 class="fw-bold">B.Sc. in Computer Science</h6>
-                      <p class="text-muted mb-1">XYZ University, 2018 - 2022</p>
-                      <p class="small text-muted">
-                        Graduated with honors, specializing in software
-                        development, data structures, and algorithms.
-                      </p>
-                    </div>
-                    <div>
-                      <h6 class="fw-bold">Web Development Certification</h6>
-                      <p class="text-muted mb-1">FreeCodeCamp, 2021</p>
-                      <p class="small text-muted">
-                        Focused on responsive web design, JavaScript, and
-                        back-end development.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="p-4 bg-white rounded shadow-sm">
-                    <h4 class="text-primary mb-4">Experience</h4>
-                    <div class="mb-4">
-                      <h6 class="fw-bold">Full-Stack Developer</h6>
-                      <p class="text-muted mb-1">
-                        Tech Innovators Inc. | 2022 - Present
-                      </p>
-                      <p class="small text-muted">
-                        Built responsive web applications using React, Node.js,
-                        and Django, collaborating with cross-functional teams to
-                        deliver high-quality software.
-                      </p>
-                    </div>
-                    <div>
-                      <h6 class="fw-bold">Freelance Web Developer</h6>
-                      <p class="text-muted mb-1">Remote | 2020 - Present</p>
-                      <p class="small text-muted">
-                        Developed custom websites and applications for clients,
-                        focusing on user experience, performance, and SEO
-                        optimization.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Skills Row -->
-              <div class="row mt-5">
-                <div class="col-lg-12">
-                  <div class="p-4 bg-light rounded shadow-sm">
-                    <h4 class="text-primary mb-4">Skills</h4>
-                    <div class="d-flex flex-wrap justify-content-start">
-                      <span class="badge bg-primary text-light fs-6 me-2 mb-2"
-                        >React</span
-                      >
-                      <span class="badge bg-primary text-light fs-6 me-2 mb-2"
-                        >Next.js</span
-                      >
-                      <span class="badge bg-primary text-light fs-6 me-2 mb-2"
-                        >Node.js</span
-                      >
-                      <span class="badge bg-primary text-light fs-6 me-2 mb-2"
-                        >Django</span
-                      >
-                      <span class="badge bg-primary text-light fs-6 me-2 mb-2"
-                        >JavaScript</span
-                      >
-                      <span class="badge bg-primary text-light fs-6 me-2 mb-2"
-                        >TypeScript</span
-                      >
-                      <span class="badge bg-primary text-light fs-6 me-2 mb-2"
-                        >PostgreSQL</span
-                      >
-                      <span class="badge bg-primary text-light fs-6 me-2 mb-2"
-                        >Firebase</span
-                      >
-                      <span class="badge bg-primary text-light fs-6 me-2 mb-2"
-                        >Bootstrap</span
-                      >
-                      <span class="badge bg-primary text-light fs-6 me-2 mb-2"
-                        >Material UI</span
-                      >
-                      <span class="badge bg-primary text-light fs-6 me-2 mb-2"
-                        >Git</span
-                      >
-                      <span class="badge bg-primary text-light fs-6 me-2 mb-2"
-                        >REST APIs</span
-                      >
-                    </div>
-                  </div>
-                </div>
+              <!-- Image Section -->
+              <div class="col-lg-4">
+                <img
+                  src="/images/photo.jpeg.jpg"
+                  alt="Fazle Chisty Himel"
+                  class="img-fluid rounded-circle shadow-lg"
+                  style="max-width: 300px; height: auto"
+                />
               </div>
             </div>
           </div>
+        </section>
 
-          <!-- Design, Development, Maintenance -->
-          <div class="container text-center mt-5">
+        <!-- Education Section -->
+        <section id="education" class="py-5">
+          <div class="container">
+            <div class="row justify-content-center mb-5">
+              <div class="col-lg-8 text-center">
+                <h2 class="fw-bold">Education</h2>
+                <p class="lead text-muted">
+                  My academic journey and achievements.
+                </p>
+              </div>
+            </div>
             <div class="row gy-4">
-              <!-- Design -->
-              <div class="col-lg-4">
-                <div class="p-4 bg-white rounded shadow-sm">
-                  <span class="material-icons-outlined text-primary fs-1"
-                    >palette</span
-                  >
-                  <h5 class="fw-bold mt-3">Design</h5>
-                  <p class="text-muted">
-                    Crafting modern, visually appealing, and user-centric
-                    designs that work seamlessly across all devices.
-                  </p>
-                </div>
-              </div>
-              <!-- Development -->
-              <div class="col-lg-4">
-                <div class="p-4 bg-white rounded shadow-sm">
-                  <span class="material-icons-outlined text-primary fs-1"
-                    >code</span
-                  >
-                  <h5 class="fw-bold mt-3">Development</h5>
-                  <p class="text-muted">
-                    Writing clean, efficient code to build responsive and
-                    scalable web applications using the latest technologies.
-                  </p>
-                </div>
-              </div>
-              <!-- Maintenance -->
-              <div class="col-lg-4">
-                <div class="p-4 bg-white rounded shadow-sm">
-                  <span class="material-icons-outlined text-primary fs-1"
-                    >settings</span
-                  >
-                  <h5 class="fw-bold mt-3">Launch & Maintenance</h5>
-                  <p class="text-muted">
-                    Ensuring seamless deployment, smooth performance, and
-                    regular updates to keep your applications running
-                    flawlessly.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- End About -->
-
-        <hr />
-
-        <!-- Academic Projects Section -->
-        <section id="academic-projects" class="py-5 bg-light">
-          <div class="container">
-            <div class="row justify-content-center mb-5">
-              <h2 class="fw-bold text-center">Academic Projects</h2>
-              <p class="lead text-muted text-center mb-5">
-                Here are some of the key academic projects and research papers
-                I’ve worked on during my studies.
-              </p>
-            </div>
-
-            <!-- Project 1 -->
-            <div class="row mb-4">
               <div class="col-lg-6">
-                <div class="card shadow-sm rounded">
-                  <img
-                    src="/images/project5.png"
-                    class="card-img-top img-fluid"
-                    alt="Project 1 Image"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title text-primary">
-                      AI-Based Chatbot for Customer Support
-                    </h5>
-                    <p class="card-text text-muted">
-                      <strong>Role:</strong> Lead Developer |
-                      <strong>Objective:</strong> To build an AI-powered chatbot
-                      capable of answering customer queries autonomously.
-                    </p>
-                    <p class="text-muted mb-2">
-                      <strong>Tools Used:</strong> Python, TensorFlow, Flask
-                    </p>
-                    <p class="small text-muted">
-                      Developed an intelligent chatbot that improves customer
-                      service efficiency by handling basic queries, reducing
-                      response times.
-                    </p>
-                    <p>
-                      <strong>Result:</strong> The project successfully reduced
-                      customer support response time by 30% and increased
-                      customer satisfaction by 20%.
-                    </p>
-                  </div>
+                <div class="p-4 bg-white rounded shadow-sm text-center">
+                  <span class="material-icons-outlined text-primary fs-1"
+                    >school</span
+                  >
+                  <h5 class="fw-bold mt-3">
+                    MSS in Information Science and Library Management
+                  </h5>
+                  <p class="text-muted mb-2">
+                    Noakhali Science and Technology University | Ongoing
+                  </p>
+                  <p class="small text-muted">
+                    Advanced studies in information science, knowledge
+                    management, and digital archiving.
+                  </p>
                 </div>
               </div>
-
               <div class="col-lg-6">
-                <div class="card shadow-sm rounded">
-                  <img
-                    src="images/project4.jpg"
-                    class="card-img-top"
-                    alt="Project 4 Image"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title text-primary">
-                      Blockchain for Secure Voting
-                    </h5>
-                    <p class="card-text text-muted">
-                      <strong>Role:</strong> Developer |
-                      <strong>Objective:</strong> To develop a blockchain-based
-                      voting system for secure elections.
-                    </p>
-                    <p class="text-muted mb-2">
-                      <strong>Tools Used:</strong> Solidity, Ethereum,
-                      JavaScript
-                    </p>
-                    <p class="small text-muted">
-                      Developed a secure voting platform using blockchain
-                      technology to ensure transparency and immutability of
-                      votes.
-                    </p>
-                    <p>
-                      <strong>Result:</strong> The platform enhanced election
-                      security, preventing fraud and ensuring data integrity
-                      during elections.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- End Academic Projects Section -->
-
-        <hr />
-
-        <!-- Technical Skills Section -->
-        <section id="technical-skills" class="py-5 bg-light">
-          <div class="container">
-            <div class="row justify-content-center mb-5">
-              <h2 class="fw-bold text-center">Technical Skills</h2>
-              <p class="lead text-muted text-center mb-5">
-                Here’s a list of the technical skills I have acquired during my
-                studies and practical experience.
-              </p>
-            </div>
-            <div class="row">
-              <div class="col-lg-4 mb-4">
-                <h4 class="text-primary">Programming Languages</h4>
-                <ul class="list-unstyled">
-                  <li>Python</li>
-                  <li>JavaScript</li>
-                  <li>C++</li>
-                  <li>Java</li>
-                  <li>SQL</li>
-                </ul>
-              </div>
-              <div class="col-lg-4 mb-4">
-                <h4 class="text-primary">Software & Tools</h4>
-                <ul class="list-unstyled">
-                  <li>Git</li>
-                  <li>Docker</li>
-                  <li>Jupyter Notebooks</li>
-                  <li>MATLAB</li>
-                  <li>VS Code</li>
-                </ul>
-              </div>
-              <div class="col-lg-4 mb-4">
-                <h4 class="text-primary">Lab Techniques & Methods</h4>
-                <ul class="list-unstyled">
-                  <li>Data Analysis</li>
-                  <li>Machine Learning Algorithms</li>
-                  <li>Statistical Methods</li>
-                  <li>Data Visualization</li>
-                  <li>Optimization Techniques</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Research Experience Section -->
-        <section id="research-experience" class="py-5">
-          <div class="container">
-            <div class="row justify-content-center mb-5">
-              <h2 class="fw-bold text-center">Research Experience</h2>
-              <p class="lead text-muted text-center mb-5">
-                Here’s a summary of the research work, internships, and lab
-                experience I have undertaken during my academic journey.
-              </p>
-            </div>
-            <div class="row">
-              <div class="col-lg-6 mb-4">
-                <div class="card shadow-sm rounded">
-                  <div class="card-body">
-                    <h5 class="card-title text-primary">
-                      Research on AI for Healthcare
-                    </h5>
-                    <p class="card-text text-muted">
-                      <strong>Role:</strong> Research Assistant |
-                      <strong>Period:</strong> 2022-2023
-                    </p>
-                    <p class="small text-muted">
-                      Investigated the use of Artificial Intelligence in
-                      healthcare applications, focusing on predictive models for
-                      disease diagnosis using machine learning algorithms.
-                    </p>
-                    <p>
-                      <strong>Responsibilities:</strong> Conducted experiments,
-                      analyzed datasets, and developed machine learning models.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 mb-4">
-                <div class="card shadow-sm rounded">
-                  <div class="card-body">
-                    <h5 class="card-title text-primary">
-                      Blockchain for Data Integrity
-                    </h5>
-                    <p class="card-text text-muted">
-                      <strong>Role:</strong> Intern |
-                      <strong>Period:</strong> Summer 2021
-                    </p>
-                    <p class="small text-muted">
-                      Worked on the development of a blockchain-based solution
-                      for ensuring data integrity in medical records.
-                    </p>
-                    <p>
-                      <strong>Responsibilities:</strong> Developed smart
-                      contracts, integrated blockchain with databases, and
-                      tested security protocols.
-                    </p>
-                  </div>
+                <div class="p-4 bg-white rounded shadow-sm text-center">
+                  <span class="material-icons-outlined text-primary fs-1"
+                    >school</span
+                  >
+                  <h5 class="fw-bold mt-3">
+                    BSS in Information Science and Library Management
+                  </h5>
+                  <p class="text-muted mb-2">
+                    Noakhali Science and Technology University | Completed
+                  </p>
+                  <p class="small text-muted">
+                    Specialized in modern library systems, cataloging, and
+                    emerging information technologies.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <!-- Publications and Presentations Section -->
-        <section id="publications-presentations" class="py-5 bg-light">
+        <!-- Skills Section -->
+        <section id="skills" class="py-5 bg-light">
           <div class="container">
             <div class="row justify-content-center mb-5">
-              <h2 class="fw-bold text-center">
-                Publications and Presentations
-              </h2>
-              <p class="lead text-muted text-center mb-5">
-                I have published articles and presented papers on various topics
-                in the field of technology and research.
-              </p>
-            </div>
-            <div class="row">
-              <div class="col-lg-6 mb-4">
-                <h5 class="text-primary">
-                  "AI for Predicting Disease Outcomes" - Journal of Machine
-                  Learning
-                </h5>
-                <p class="small text-muted">
-                  <strong>Published:</strong> 2023 | <strong>Summary:</strong> A
-                  study on AI-powered prediction systems for predicting patient
-                  outcomes in hospitals.
-                </p>
-              </div>
-              <div class="col-lg-6 mb-4">
-                <h5 class="text-primary">
-                  "Blockchain Technology in Healthcare" - Tech Innovations
-                  Conference
-                </h5>
-                <p class="small text-muted">
-                  <strong>Presented:</strong> 2022 |
-                  <strong>Summary:</strong> Discussed the application of
-                  blockchain in healthcare systems for secure patient data
-                  storage and management.
+              <div class="col-lg-8 text-center">
+                <h2 class="fw-bold">Skills</h2>
+                <p class="lead text-muted">
+                  Key areas of expertise and technical skills.
                 </p>
               </div>
             </div>
+            <div class="row gy-4">
+              <div class="col-lg-4 text-center">
+                <div class="p-4 bg-white rounded shadow-sm">
+                  <span class="material-icons-outlined text-primary fs-1"
+                    >storage</span
+                  >
+                  <h5 class="fw-bold mt-3">Information Management</h5>
+                </div>
+              </div>
+              <div class="col-lg-4 text-center">
+                <div class="p-4 bg-white rounded shadow-sm">
+                  <span class="material-icons-outlined text-primary fs-1"
+                    >archive</span
+                  >
+                  <h5 class="fw-bold mt-3">Digital Archiving</h5>
+                </div>
+              </div>
+              <div class="col-lg-4 text-center">
+                <div class="p-4 bg-white rounded shadow-sm">
+                  <span class="material-icons-outlined text-primary fs-1"
+                    >auto_stories</span
+                  >
+                  <h5 class="fw-bold mt-3">Library Automation</h5>
+                </div>
+              </div>
+              <div class="col-lg-4 text-center">
+                <div class="p-4 bg-white rounded shadow-sm">
+                  <span class="material-icons-outlined text-primary fs-1"
+                    >insights</span
+                  >
+                  <h5 class="fw-bold mt-3">Data Analysis</h5>
+                </div>
+              </div>
+              <div class="col-lg-4 text-center">
+                <div class="p-4 bg-white rounded shadow-sm">
+                  <span class="material-icons-outlined text-primary fs-1"
+                    >format_list_bulleted</span
+                  >
+                  <h5 class="fw-bold mt-3">Metadata Standards</h5>
+                </div>
+              </div>
+              <div class="col-lg-4 text-center">
+                <div class="p-4 bg-white rounded shadow-sm">
+                  <span class="material-icons-outlined text-primary fs-1"
+                    >public</span
+                  >
+                  <h5 class="fw-bold mt-3">Knowledge Management</h5>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
+
+        <hr />
 
         <!-- Certifications and Courses Section -->
-        <section id="certifications-courses" class="py-5">
+        <section
+          id="certifications-courses"
+          class="py-5"
+          style="background: #f9f9f9"
+        >
           <div class="container">
+            <!-- Section Header -->
             <div class="row justify-content-center mb-5">
               <h2 class="fw-bold text-center">Certifications & Courses</h2>
               <p class="lead text-muted text-center mb-5">
@@ -548,84 +342,161 @@
                 have completed during my MSc studies.
               </p>
             </div>
+
+            <!-- Certifications -->
             <div class="row">
+              <!-- Programming Hero -->
               <div class="col-lg-4 mb-4">
-                <h5 class="text-primary">Certified AI Specialist</h5>
-                <p class="small text-muted">
-                  Completed in 2023 - Coursera | Focused on Machine Learning and
-                  Artificial Intelligence principles.
-                </p>
+                <div class="card border-0 shadow-sm">
+                  <img
+                    src="/images/c-1.jpg"
+                    alt="Programming Hero"
+                    class="card-img-top rounded-top"
+                    style="height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body">
+                    <h5 class="text-primary">Programming Hero</h5>
+                    <p class="small text-muted">
+                      HTML, CSS, JavaScript, React |
+                      <a
+                        href="https://programming-hero.com/"
+                        target="_blank"
+                        rel="noopener"
+                        >Visit Certificate</a
+                      >
+                    </p>
+                  </div>
+                </div>
               </div>
+
+              <!-- Coursera -->
               <div class="col-lg-4 mb-4">
-                <h5 class="text-primary">Web Development Bootcamp</h5>
-                <p class="small text-muted">
-                  Completed in 2022 - Udemy | Full-stack development using
-                  React, Node.js, and Express.js.
-                </p>
+                <div class="card border-0 shadow-sm">
+                  <img
+                    src="/images/c-2.jpg"
+                    alt="Coursera"
+                    class="card-img-top rounded-top"
+                    style="height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body">
+                    <h5 class="text-primary">Coursera</h5>
+                    <p class="small text-muted">
+                      HTML, CSS, JS for Web Development |
+                      <a
+                        href="https://www.coursera.org/account/accomplishments/certificate/ZDYFHSR2B3KY"
+                        target="_blank"
+                        rel="noopener"
+                        >Visit Certificate</a
+                      >
+                    </p>
+                  </div>
+                </div>
               </div>
+
+              <!-- Learn with Sumit -->
               <div class="col-lg-4 mb-4">
-                <h5 class="text-primary">
-                  Blockchain Technology Certification
-                </h5>
-                <p class="small text-muted">
-                  Completed in 2021 - edX | Hands-on experience with blockchain
-                  platforms and smart contracts.
-                </p>
+                <div class="card border-0 shadow-sm">
+                  <img
+                    src="/images/c-3.jpg"
+                    alt="Learn with Sumit"
+                    class="card-img-top rounded-top"
+                    style="height: 200px; object-fit: cover"
+                  />
+                  <div class="card-body">
+                    <h5 class="text-primary">Learn with Sumit</h5>
+                    <p class="small text-muted">
+                      React Advanced and Next.js |
+                      <a
+                        href="https://learnwithsumit.com/certificates/verify/LWSCTXN-ZKJDGHF7"
+                        target="_blank"
+                        rel="noopener"
+                        >Visit Certificate</a
+                      >
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
         <!-- Professional Experience Section -->
-        <section id="professional-experience" class="py-5 bg-light">
+        <section
+          id="professional-experience"
+          class="py-5"
+          style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)"
+        >
           <div class="container">
-            <div class="row justify-content-center mb-5">
-              <h2 class="fw-bold text-center">Professional Experience</h2>
-              <p class="lead text-muted text-center mb-5">
-                Below are some of the internships and professional roles I have
-                held during my studies.
+            <!-- Heading -->
+            <div class="text-center mb-5">
+              <h2 class="fw-bold display-5 text-primary">
+                Professional Experience
+              </h2>
+              <p class="text-muted fs-5">
+                Explore the roles and projects I’ve contributed to during my
+                academic journey.
               </p>
             </div>
-            <div class="row">
-              <div class="col-lg-6 mb-4">
-                <div class="card shadow-sm rounded">
+
+            <!-- Experience Cards -->
+            <div class="row gy-5">
+              <div class="col-md-6">
+                <div class="card border-0 shadow rounded-4 h-100">
                   <div class="card-body">
-                    <h5 class="card-title text-primary">
+                    <h5 class="text-primary fw-bold">
                       Software Engineering Intern
                     </h5>
-                    <p class="card-text text-muted">
-                      <strong>Company:</strong> Tech Innovations |
+                    <p class="text-muted mb-2">
+                      <strong>Company:</strong> Tech Innovations <br />
                       <strong>Duration:</strong> Summer 2022
                     </p>
-                    <p class="small text-muted">
-                      Assisted in the development and testing of software
-                      solutions for internal systems and customer applications.
+                    <p class="small">
+                      Contributed to the development and testing of software
+                      solutions.
                     </p>
-                    <p>
-                      <strong>Responsibilities:</strong> Writing and reviewing
-                      code, bug fixes, and integrating features into existing
-                      products.
-                    </p>
+                    <ul class="list-unstyled">
+                      <li>
+                        <i class="bi bi-check-circle-fill text-primary me-2"></i
+                        >Developed new features and APIs.
+                      </li>
+                      <li>
+                        <i class="bi bi-check-circle-fill text-primary me-2"></i
+                        >Fixed bugs and optimized performance.
+                      </li>
+                      <li>
+                        <i class="bi bi-check-circle-fill text-primary me-2"></i
+                        >Collaborated with cross-functional teams.
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6 mb-4">
-                <div class="card shadow-sm rounded">
+              <div class="col-md-6">
+                <div class="card border-0 shadow rounded-4 h-100">
                   <div class="card-body">
-                    <h5 class="card-title text-primary">Junior Data Analyst</h5>
-                    <p class="card-text text-muted">
-                      <strong>Company:</strong> Data Insights |
+                    <h5 class="text-primary fw-bold">Junior Data Analyst</h5>
+                    <p class="text-muted mb-2">
+                      <strong>Company:</strong> Data Insights <br />
                       <strong>Duration:</strong> Fall 2021
                     </p>
-                    <p class="small text-muted">
-                      Worked as a Junior Data Analyst helping to process and
-                      visualize data sets for business insights.
+                    <p class="small">
+                      Analyzed and visualized data sets to drive business
+                      decisions.
                     </p>
-                    <p>
-                      <strong>Responsibilities:</strong> Data cleaning,
-                      performing analysis, and creating reports for the
-                      management team.
-                    </p>
+                    <ul class="list-unstyled">
+                      <li>
+                        <i class="bi bi-check-circle-fill text-primary me-2"></i
+                        >Data cleaning and preprocessing.
+                      </li>
+                      <li>
+                        <i class="bi bi-check-circle-fill text-primary me-2"></i
+                        >Created dashboards and presentations.
+                      </li>
+                      <li>
+                        <i class="bi bi-check-circle-fill text-primary me-2"></i
+                        >Delivered actionable insights.
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -634,244 +505,131 @@
         </section>
 
         <!-- Curricular Activities Section -->
-        <section id="curricular-activities" class="py-5 bg-light">
+        <section
+          id="curricular-activities"
+          class="py-5"
+          style="background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)"
+        >
           <div class="container">
-            <div class="row justify-content-center mb-5">
-              <h2 class="fw-bold text-center">Curricular Activities</h2>
-              <p class="lead text-muted text-center mb-5">
-                Active participation in various extracurricular and volunteer
-                activities that complement my academic development.
+            <!-- Heading -->
+            <div class="text-center mb-5">
+              <h2 class="fw-bold display-5 text-primary">
+                Curricular Activities
+              </h2>
+              <p class="text-muted fs-5">
+                Beyond academics, here’s how I contributed to my community and
+                pursued my interests.
               </p>
             </div>
-            <div class="row">
-              <div class="col-lg-6 mb-4">
-                <h5 class="text-primary">Volunteer - Code for Good</h5>
-                <p class="small text-muted">
-                  Worked with a team of developers to teach coding skills to
-                  underprivileged children.
-                </p>
+
+            <!-- Activities -->
+            <div class="row gy-5">
+              <div class="col-md-6 d-flex align-items-start">
+                <div class="icon-box text-primary me-3">
+                  <i class="bi bi-heart-fill fs-2"></i>
+                </div>
+                <div>
+                  <h5 class="fw-bold text-primary">
+                    Volunteer - Code for Good
+                  </h5>
+                  <p class="small text-muted">
+                    Taught coding to underprivileged children, empowering them
+                    with tech skills.
+                  </p>
+                </div>
               </div>
-              <div class="col-lg-6 mb-4">
-                <h5 class="text-primary">Member - University Robotics Club</h5>
-                <p class="small text-muted">
-                  Collaborated on building autonomous robots for university
-                  competitions.
-                </p>
+              <div class="col-md-6 d-flex align-items-start">
+                <div class="icon-box text-primary me-3">
+                  <i class="bi bi-robot fs-2"></i>
+                </div>
+                <div>
+                  <h5 class="fw-bold text-primary">
+                    Member - University Robotics Club
+                  </h5>
+                  <p class="small text-muted">
+                    Designed autonomous robots for competitions, showcasing
+                    technical innovation.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
         <!-- Future Goals Section -->
-        <section id="future-goals" class="py-5">
+        <section
+          id="future-goals"
+          class="py-5"
+          style="background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%)"
+        >
           <div class="container">
-            <div class="row justify-content-center mb-5">
-              <h2 class="fw-bold text-center">Future Goals</h2>
-              <p class="lead text-muted text-center mb-5">
-                My future goals include contributing to advancements in AI and
-                blockchain, with a focus on real-world applications.
+            <!-- Heading -->
+            <div class="text-center mb-5">
+              <h2 class="fw-bold display-5 text-primary">Future Goals</h2>
+              <p class="text-muted fs-5">
+                I’m driven to create innovative solutions in AI and blockchain
+                to make a meaningful impact.
               </p>
             </div>
-            <div class="row">
-              <div class="col-lg-6 mb-4">
-                <h5 class="text-primary">AI in Healthcare</h5>
-                <p class="small text-muted">
-                  Researching innovative AI applications to improve healthcare
-                  diagnostics and patient care.
-                </p>
-              </div>
-              <div class="col-lg-6 mb-4">
-                <h5 class="text-primary">Blockchain for Security</h5>
-                <p class="small text-muted">
-                  Focusing on secure and decentralized applications for data
-                  protection and privacy.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
 
-        <!-- Projects -->
-        <section id="projects" class="text-center py-5">
-          <div class="container py-5">
-            <div class="row justify-content-center">
-              <h2 class="fw-bold">Projects</h2>
-              <p class="lead text-muted mb-5">
-                View some of my latest projects
-              </p>
-            </div>
-          </div>
-          <div class="container mb-5">
-            <div class="row">
-              <!-- Web Application -->
-              <div class="col-lg-4 mx-auto mb-5">
-                <div class="card h-100 shadow-lg border-0 bg-light">
-                  <img
-                    class="card-img-top"
-                    src="images/project1.png"
-                    alt="Project 1"
-                  />
-                  <div class="card-body p-4">
-                    <h5 class="card-title mb-3">Web Application</h5>
-                    <div class="mb-2">
-                      <div class="badge bg-primary rounded-pill">React</div>
-                      <div class="badge bg-primary rounded-pill">
-                        Styled Components
-                      </div>
-                      <div class="badge bg-primary rounded-pill">
-                        Material UI
-                      </div>
-                    </div>
-                    <p class="card-text">
-                      A full-featured responsive single-page web application for
-                      a Netherlands-based startup company named Orange
-                      Programming.
+            <!-- Goals Cards -->
+            <div class="row gy-5">
+              <div class="col-md-6">
+                <div class="card border-0 shadow rounded-4 h-100">
+                  <div class="card-body">
+                    <h5 class="fw-bold text-primary">AI in Healthcare</h5>
+                    <p class="small text-muted">
+                      Leveraging AI to enhance diagnostics, patient care, and
+                      operational efficiency.
                     </p>
-                  </div>
-                  <div class="card-footer bg-transparent mb-3">
-                    <a
-                      class="btn btn-outline-primary btn-sm text-uppercase"
-                      href="https://www.abroadinquiry.com/"
-                      target="_blank"
-                    >
-                      <span class="material-icons-outlined me-1">code</span>
-                      Source Code
-                    </a>
-                    <a
-                      class="btn btn-primary btn-sm text-uppercase"
-                      href="https://www.abroadinquiry.com/"
-                      target="_blank"
-                    >
-                      <span class="material-icons-outlined me-1"
-                        >visibility</span
-                      >
-                      Live Link
-                    </a>
                   </div>
                 </div>
               </div>
-
-              <!-- Web & Mobile Application -->
-              <div class="col-lg-4 mx-auto mb-5">
-                <div class="card h-100 shadow-lg border-0 bg-light">
-                  <img
-                    class="card-img-top"
-                    src="images/project2.png"
-                    alt="Project 2"
-                  />
-                  <div class="card-body p-4">
-                    <h5 class="card-title mb-3">Web & Mobile Application</h5>
-                    <div class="mb-2">
-                      <div class="badge bg-primary rounded-pill">React</div>
-                      <div class="badge bg-primary rounded-pill">Next JS</div>
-                      <div class="badge bg-primary rounded-pill">Node JS</div>
-                      <div class="badge bg-primary rounded-pill">
-                        Express JS
-                      </div>
-                      <div class="badge bg-primary rounded-pill">MySQL</div>
-                      <div class="badge bg-primary rounded-pill">Firebase</div>
-                      <div class="badge bg-primary rounded-pill">
-                        Material UI
-                      </div>
-                    </div>
-                    <p class="card-text">
-                      A full-featured responsive web application and mobile
-                      application with authentication, chatting & appointment
-                      booking features, and an admin panel for Abroad Inquiry.
+              <div class="col-md-6">
+                <div class="card border-0 shadow rounded-4 h-100">
+                  <div class="card-body">
+                    <h5 class="fw-bold text-primary">
+                      Blockchain for Security
+                    </h5>
+                    <p class="small text-muted">
+                      Developing secure, decentralized applications to ensure
+                      data privacy and security.
                     </p>
-                  </div>
-                  <div class="card-footer bg-transparent mb-3">
-                    <a
-                      class="btn btn-outline-primary btn-sm text-uppercase"
-                      href="https://www.abroadinquiry.com/"
-                      target="_blank"
-                    >
-                      <span class="material-icons-outlined me-1">code</span>
-                      Source Code
-                    </a>
-                    <a
-                      class="btn btn-primary btn-sm text-uppercase"
-                      href="https://www.abroadinquiry.com/"
-                      target="_blank"
-                    >
-                      <span class="material-icons-outlined me-1"
-                        >visibility</span
-                      >
-                      Live Link
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Mobile Application -->
-              <div class="col-lg-4 mx-auto mb-5">
-                <div class="card h-100 shadow-lg border-0 bg-light">
-                  <img
-                    class="card-img-top"
-                    src="images/project3.png"
-                    alt="Project 3"
-                  />
-                  <div class="card-body p-4">
-                    <h5 class="card-title mb-3">Mobile Application</h5>
-                    <div class="mb-2">
-                      <div class="badge bg-primary rounded-pill">
-                        React Native
-                      </div>
-                      <div class="badge bg-primary rounded-pill">Redux</div>
-                      <div class="badge bg-primary rounded-pill">Firebase</div>
-                      <div class="badge bg-primary rounded-pill">
-                        React Native Paper
-                      </div>
-                      <div class="badge bg-primary rounded-pill">
-                        Material UI
-                      </div>
-                    </div>
-                    <p class="card-text">
-                      An intuitive and modern mobile app tailored for both iOS
-                      and Android platforms, designed to provide a smooth
-                      experience for students seeking opportunities to study
-                      abroad.
-                    </p>
-                  </div>
-                  <div class="card-footer bg-transparent mb-3">
-                    <a
-                      class="btn btn-primary btn-sm text-uppercase"
-                      href="https://play.google.com/store/apps/details?id=com.abroadinquiry.app"
-                      target="_blank"
-                    >
-                      Play Store
-                    </a>
-                    <a
-                      class="btn btn-primary btn-sm text-uppercase"
-                      href="https://apps.apple.com/us/app/abroad-inquiry/id1664679066"
-                      target="_blank"
-                    >
-                      Appstore
-                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <!-- End Projects -->
 
         <hr />
 
         <!-- Testimonials -->
-        <section id="testimonials" class="text-center py-5 bg-light">
+        <section
+          id="testimonials"
+          class="text-center py-5"
+          style="
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #fff;
+          "
+        >
           <div class="container py-5">
+            <!-- Heading -->
             <div class="row justify-content-center">
-              <h2 class="fw-bold display-5 mb-3">What Clients Say</h2>
-              <p class="lead text-muted mb-5">
+              <h2 class="fw-bold display-5 mb-3 text-white">
+                What Clients Say
+              </h2>
+              <p class="lead text-light mb-5">
                 Hear from my clients about their experiences working with me.
               </p>
             </div>
+
+            <!-- Testimonials Grid -->
             <div class="row gx-4 gy-5">
               <!-- Testimonial 1 -->
               <div class="col-lg-4">
-                <div class="card shadow-lg border-0 rounded-4 h-100">
-                  <div class="card-body p-4">
+                <div class="card shadow-lg border-0 rounded-4 h-100 bg-white">
+                  <div class="card-body p-4 text-center">
                     <div class="mb-4">
                       <img
                         class="rounded-circle border border-primary mb-3"
@@ -879,7 +637,7 @@
                         alt="User 1"
                         style="width: 80px; height: 80px"
                       />
-                      <h5 class="fw-bold mb-0">Amy Jones</h5>
+                      <h5 class="fw-bold mb-0 text-primary">Amy Jones</h5>
                       <p class="text-muted">CEO, Company 1</p>
                     </div>
                     <p class="text-muted fst-italic">
@@ -892,8 +650,8 @@
 
               <!-- Testimonial 2 -->
               <div class="col-lg-4">
-                <div class="card shadow-lg border-0 rounded-4 h-100">
-                  <div class="card-body p-4">
+                <div class="card shadow-lg border-0 rounded-4 h-100 bg-white">
+                  <div class="card-body p-4 text-center">
                     <div class="mb-4">
                       <img
                         class="rounded-circle border border-primary mb-3"
@@ -901,7 +659,7 @@
                         alt="User 2"
                         style="width: 80px; height: 80px"
                       />
-                      <h5 class="fw-bold mb-0">James Smith</h5>
+                      <h5 class="fw-bold mb-0 text-primary">James Smith</h5>
                       <p class="text-muted">CEO, Company 2</p>
                     </div>
                     <p class="text-muted fst-italic">
@@ -914,8 +672,8 @@
 
               <!-- Testimonial 3 -->
               <div class="col-lg-4">
-                <div class="card shadow-lg border-0 rounded-4 h-100">
-                  <div class="card-body p-4">
+                <div class="card shadow-lg border-0 rounded-4 h-100 bg-white">
+                  <div class="card-body p-4 text-center">
                     <div class="mb-4">
                       <img
                         class="rounded-circle border border-primary mb-3"
@@ -923,7 +681,7 @@
                         alt="User 3"
                         style="width: 80px; height: 80px"
                       />
-                      <h5 class="fw-bold mb-0">Mary Richards</h5>
+                      <h5 class="fw-bold mb-0 text-primary">Mary Richards</h5>
                       <p class="text-muted">CEO, Company 3</p>
                     </div>
                     <p class="text-muted fst-italic">
@@ -940,108 +698,219 @@
 
         <hr />
 
-        <!-- Contact -->
-        <section id="contact" class="py-5 bg-light">
-          <div class="container text-center py-5">
-            <!-- Heading -->
-            <div class="row justify-content-center mb-5">
+        <!-- Contact Section -->
+        <section
+          id="contact"
+          class="py-5"
+          style="background: linear-gradient(to bottom, #f9f9f9, #e9ecef)"
+        >
+          <div class="container py-5">
+            <!-- Section Heading -->
+            <div class="row justify-content-center text-center mb-5">
               <div class="col-lg-8">
                 <h2 class="fw-bold mb-4">Get in Touch</h2>
-                <p class="lead text-muted">
-                  Interested in working together or have any questions? Reach
-                  out to me, and I’ll get back to you as soon as possible!
+                <p class="text-muted lead">
+                  Whether you have a question, a proposal, or just want to say
+                  hello, feel free to drop a message. Let's create something
+                  amazing together!
                 </p>
               </div>
             </div>
 
-            <!-- Contact Details -->
-            <div class="row gy-5">
+            <!-- Contact Details and Form -->
+            <div class="row g-5">
               <!-- Left: Contact Information -->
-              <div class="col-md-6 text-start">
-                <h4 class="text-primary mb-4">Contact Information</h4>
-                <div class="mb-4">
-                  <h6 class="text-uppercase mb-2">Address</h6>
-                  <p class="lead mb-0">
-                    <span class="material-icons-outlined me-2 text-primary"
+              <div class="col-md-5">
+                <div class="bg-white p-4 rounded shadow-sm h-100">
+                  <h4 class="text-primary mb-4">Contact Information</h4>
+                  <div class="d-flex align-items-start mb-4">
+                    <span class="material-icons-outlined text-primary me-3"
                       >place</span
                     >
-                    Dhaka, Bangladesh
-                  </p>
-                </div>
-                <div class="mb-4">
-                  <h6 class="text-uppercase mb-2">Phone</h6>
-                  <p class="lead mb-0">
-                    <span class="material-icons-outlined me-2 text-primary"
+                    <div>
+                      <h6 class="text-uppercase fw-bold mb-1">Address</h6>
+                      <p class="text-muted mb-0">Dhaka, Bangladesh</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-start mb-4">
+                    <span class="material-icons-outlined text-primary me-3"
                       >phone</span
                     >
-                    +8801952910203
-                  </p>
-                </div>
-                <div class="mb-4">
-                  <h6 class="text-uppercase mb-2">Email</h6>
-                  <p class="lead mb-0">
-                    <span class="material-icons-outlined me-2 text-primary"
+                    <div>
+                      <h6 class="text-uppercase fw-bold mb-1">Phone</h6>
+                      <p class="text-muted mb-0">+8801952910203</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-start">
+                    <span class="material-icons-outlined text-primary me-3"
                       >email</span
                     >
-                    fazle.chisty@gmail.com
-                  </p>
+                    <div>
+                      <h6 class="text-uppercase fw-bold mb-1">Email</h6>
+                      <p class="text-muted mb-0">fazle.chisty@gmail.com</p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
               <!-- Right: Contact Form -->
-              <div class="col-md-6">
-                <h4 class="text-primary mb-4">Send a Message</h4>
-                <form>
-                  <div class="form-floating mb-4">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="name"
-                      placeholder="Your Name"
-                      required
-                    />
-                    <label for="name">Your Name</label>
-                  </div>
-                  <div class="form-floating mb-4">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="Your Email"
-                      required
-                    />
-                    <label for="email">Your Email</label>
-                  </div>
-                  <div class="form-floating mb-4">
-                    <textarea
-                      class="form-control"
-                      id="message"
-                      placeholder="Your Message"
-                      style="height: 150px"
-                      required
-                    ></textarea>
-                    <label for="message">Your Message</label>
-                  </div>
-                  <button
-                    type="submit"
-                    class="btn btn-primary px-5 py-2 rounded-pill shadow-sm"
-                  >
-                    Send Message
-                  </button>
-                </form>
+              <div class="col-md-7">
+                <div class="bg-white p-4 rounded shadow-sm h-100">
+                  <h4 class="text-primary mb-4">Send a Message</h4>
+                  <form>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="Your Name"
+                        required
+                      />
+                      <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Your Email"
+                        required
+                      />
+                      <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        placeholder="Your Message"
+                        style="height: 150px"
+                        required
+                      ></textarea>
+                      <label for="message">Your Message</label>
+                    </div>
+                    <button
+                      type="submit"
+                      class="btn btn-primary px-4 py-2 rounded-pill shadow-sm"
+                    >
+                      Send Message
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
         </section>
-        <!-- End Contact -->
+        <!-- End Contact Section -->
       </main>
     </div>
 
     <hr />
 
     <!-- Footer -->
-    <footer class="text-center py-4">
-      <div class="container px-5 mb-2">Copyright &copy; 2024 Chisty Himel.</div>
+    <footer class="py-5 bg-dark text-light">
+      <div class="container">
+        <!-- Footer Content -->
+        <div class="row text-center text-md-start">
+          <!-- About Section -->
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold text-primary mb-3">About Me</h5>
+            <p class="small text-muted">
+              I am a passionate developer and tech enthusiast with expertise in
+              AI, web development, and blockchain technology. Dedicated to
+              creating innovative solutions and continuously learning to stay
+              ahead in the tech world.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold text-primary mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#about" class="text-muted text-decoration-none"
+                  >About Me</a
+                >
+              </li>
+              <li>
+                <a href="#portfolio" class="text-muted text-decoration-none"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#certifications-courses"
+                  class="text-muted text-decoration-none"
+                  >Certifications</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="text-muted text-decoration-none"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold text-primary mb-3">Contact</h5>
+            <ul class="list-unstyled">
+              <li class="text-muted mb-2">
+                <span class="material-icons-outlined text-primary me-2"
+                  >place</span
+                >
+                Dhaka, Bangladesh
+              </li>
+              <li class="text-muted mb-2">
+                <span class="material-icons-outlined text-primary me-2"
+                  >phone</span
+                >
+                +8801952910203
+              </li>
+              <li class="text-muted">
+                <span class="material-icons-outlined text-primary me-2"
+                  >email</span
+                >
+                fazle.chisty@gmail.com
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="row justify-content-center mt-4">
+          <div class="col-auto">
+            <a
+              href="https://www.linkedin.com/in/yourprofile"
+              target="_blank"
+              class="text-light me-3 fs-5"
+            >
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/yourprofile"
+              target="_blank"
+              class="text-light me-3 fs-5"
+            >
+              <i class="bi bi-github"></i>
+            </a>
+            <a
+              href="https://twitter.com/yourprofile"
+              target="_blank"
+              class="text-light fs-5"
+            >
+              <i class="bi bi-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="row mt-5">
+          <div class="col text-center small text-muted">
+            &copy; 2024 Chisty Himel. All Rights Reserved.
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- End Footer -->
 
